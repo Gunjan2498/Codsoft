@@ -1,0 +1,54 @@
+// SIMPLE ARITHMETIC CALCULATOR
+/*Develop a calculator program that performs basic arithmetic operations such as addition,subtraction,multiplication and division.
+Allow the user to input two numbers and choose an operation to perform*/
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    cout << "\n\n.......................................SIMPLE ARITHMETIC CALCULATOR.......................................\n\n"<< endl;
+
+    int num1, num2;
+    char o;
+
+    cout << " Arithmetic operations according to your selection are as follow:" << endl;
+    cout << " 1. '+' is for ADDITION\n 2. '-' is for SUBTRACTION\n 3. '*' is for MULTIPLICATION\n 4. '/' is for DIVISION" << endl;
+
+    cout << endl;
+    cout << " Enter value for number 1: ";
+    cin >> num1;
+
+    cout << " Enter value for number 2: ";
+    cin >> num2;
+
+    cout << " Enter operators(+ , - , * , /): ";
+    cin >> o;
+    cout << endl;
+
+    // By using switch case user can perform operation by its choose
+    switch (o)
+    {
+    case '+':
+        cout << " The result of addition of two numbers is: " << num1 + num2 << endl;
+        break;
+
+    case '-':
+        cout << " The result of subtraction of two numbers is: " << num1 - num2 << endl;
+        break;
+
+    case '*':
+        cout << " The result of multiplication of two numbers is: " << num1 * num2 << endl;
+        break;
+
+    case '/':
+        cout << " The result of division of two numbers is: " << num1 / num2 << endl;
+        break;
+
+    default:
+        cout << " Performing scientific operation" << endl;
+        break;
+    }
+    cout << endl;
+} 
